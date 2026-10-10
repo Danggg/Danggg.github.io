@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danggg — Projects</title>
+<style>
+  :root {
+    --bg: #12151b;
+    --surface: #1b2029;
+    --fg: #c8d0dc;
+    --muted: #8a94a3;
+    --border: #2a313d;
+    --accent: #7fa88a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Georgia, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  main {
+    width: min(680px, 92vw);
+    padding: 56px 0 72px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0 0 6px;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .project {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--fg);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .project:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .project .name {
+    font-size: 19px;
+  }
+  .project .name .ext {
+    color: var(--muted);
+    font-size: 13px;
+    margin-left: 8px;
+  }
+  .project .desc {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+  .game-link {
+    margin-top: 28px;
+    font-size: 15px;
+  }
+  .game-link a {
+    color: var(--accent);
+  }
+  footer {
+    margin-top: 56px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Danggg</h1>
+  <div class="sub">Public projects</div>
+
+  <a class="project" href="https://github.com/Danggg/LLMGame">
+    <div class="name">LLMGame <span class="ext">JavaScript</span></div>
+    <div class="desc">Zombie Sword — top-down zombie survival: swing, survive, score. Zero dependencies.</div>
+  </a>
+  <a class="project" href="https://github.com/Danggg/XwynnsHelperMod">
+    <div class="name">XwynnsHelperMod <span class="ext">C#</span></div>
+    <div class="desc">Helper mod for XWynns.</div>
+  </a>
+  <a class="project" href="https://github.com/Danggg/hospital">
+    <div class="name">hospital <span class="ext">Objective-C</span></div>
+    <div class="desc">Hospital app.</div>
+  </a>
+
+  <div class="game-link">
+    Play Zombie Sword → <a href="https://danggg.github.io/LLMGame/">danggg.github.io/LLMGame</a>
+  </div>
+
+  <footer>GitHub: <a href="https://github.com/Danggg">github.com/Danggg</a></footer>
+</main>
+</body>
+</html>
